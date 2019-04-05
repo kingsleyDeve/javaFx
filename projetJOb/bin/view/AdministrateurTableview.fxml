@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdministrateurTableviewcontroller">
+   <children>
+      <TableView fx:id="tableOffre" layoutX="121.0" layoutY="108.0" prefHeight="200.0" prefWidth="357.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="84.0" text="id" />
+          <TableColumn fx:id="type_contrat" prefWidth="111.20001220703125" text="contrat" />
+            <TableColumn fx:id="emploi" prefWidth="161.60000000000002" text="emploi" />
+        </columns>
+      </TableView>
+
+      <Button fx:id="supprimerBtn" layoutX="14.0" layoutY="108.0" mnemonicParsing="false" onAction="#supprimer" style="-fx-background-color: RED;" text="Supprimer" textFill="#fffdfd" />
+      <Button fx:id="deconnexionBtn" layoutX="494.0" layoutY="108.0" mnemonicParsing="false" onAction="#deconnexion" style="-fx-background-color: BLACK;" text="Déconnexion" textFill="#fdfdfd" />
+      <HBox prefHeight="46.0" prefWidth="600.0" style="-fx-background-color: #3389A6;">
+         <children>
+            <Label prefHeight="35.0" prefWidth="204.0" text="TABLEAU D'OFFRE" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="225.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <Button fx:id="cdiBtn" layoutX="221.0" layoutY="67.0" mnemonicParsing="false" onAction="#cdi" text="cdi" />
+      <TextField fx:id="recherche" layoutX="58.0" layoutY="67.0" text="recherche contrat" />
+     
+   </children>
+</AnchorPane>
